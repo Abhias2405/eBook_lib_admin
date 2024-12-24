@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+<div align="center">
+  <div>
+    <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-Shadcn/UI-black?style=for-the-badge&logoColor=white&logo=shadcnui&color=000000" alt="shadcn" />
+  </div>
+  <h3 align="center">E-Book Library Admin Dashboard</h3>
+   <div align="center">
+     Administrative interface for managing E-Books
+    </div>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Table of Contents
+1. 🔋 [Features](#features)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🤸 [Quick Start](#quick-start)
+4. 🚀 [Pages](#pages)
+5. 🛠️ [Environment Setup](#environment)
 
-Currently, two official plugins are available:
+## <a name="features">🔋 Features</a>
+👉 **Authentication**: Secure admin login  
+👉 **Book Management**: Full CRUD operations  
+👉 **Image Upload**: Cloudinary integration  
+👉 **Modern UI**: Built with Shadcn/UI  
+👉 **Personal Dashboard**: View uploaded books
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## <a name="tech-stack">⚙️ Tech Stack</a>
+- React with Vite
+- TypeScript
+- Tailwind CSS
+- Shadcn/UI
+- Vercel Deployment
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## <a name="quick-start">🤸 Quick Start</a>
+```bash
+git clone https://github.com/Abhias2405/eBook_lib_admin
+cd eBook_lib_admin
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## <a name="pages">🚀 Pages</a>
+- `/login` - Admin authentication
+- `/dashboard` - Book management
+- `/books/new` - Add new book
+- `/books/edit/[id]` - Edit existing book
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## <a name="environment">🛠️ Environment Setup</a>
+```plaintext
+VITE_BASE_URL=
 ```
